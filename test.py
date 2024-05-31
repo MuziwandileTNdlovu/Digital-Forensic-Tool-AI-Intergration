@@ -1,0 +1,23 @@
+import requests
+
+response =  {"created": 1717152564,
+  "model": "llama3-70b",
+  "usage": {
+    "prompt_tokens": 842,
+    "completion_tokens": 922,
+    "total_tokens": 1764
+  },
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "**Digital Forensics Report**\n\n**Case Number:** [Insert Case Number]\n\n**Date:** [Insert Date]\n\n**Analysis Summary:**\n\nThis report presents the findings of a digital forensic analysis of an audio or video recording. The analysis was conducted to extract relevant information, identify speakers, and determine the sentiment and keywords present in the recording.\n\n**Transcription:**\n\nThe transcription of the audio or video recording is as follows:\n\n\"enough that what happened what happened after she got out of the orphanage um she found the old building where she used to live um and she um went inside it um and she started to have a look around um what is she finding in the building um these are all pictures on the wall and she found this old um sort of like case\"\n\n**Sentiment Analysis:**\n\nThe sentiment analysis of the transcribed text reveals the following metrics:\n\n* **Polarity:** 0.08409090909090909 (neutral sentiment)\n* **Subjectivity:** 0.35 (moderately subjective)\n\nThe sentiment analysis indicates that the tone of the conversation is neutral, with a moderate level of subjectivity.\n\n**Speaker Identification:**\n\nThe speaker identification analysis identified three speakers in the recording, labeled as Speaker 0, Speaker 1, and Speaker 2. The speakers' utterances are as follows:\n\n* **Speaker 0:** enough, that, what, happened, what, happened, after, she, got, out, of, the, orphanage, um, she, found, the, old, building, where, she, used, to, live, um, and, she, um, went, inside, it, um, and, she, started, to, have, a, look, around, um, what, is, she, finding, in, the, building, um, these, are, all, pictures, on, the, wall, and, she, found, this, old, um, sort, of, like, case\n* **Speaker 1:** the, orphanage, um, she, found, the, old, building, where, she, used, to, live, um, and, she, um, went, inside, it, um, and, she, started, to, have, a, look, around, um, um, these, are, all, pictures, on, the, wall, and, she, found, this, old, um, sort, of, like, case\n* **Speaker 2:** enough, that, what, happened, what, happened, after, she, got, out, of, what, is, she, finding, in, the, building\n\n**Keyword Extraction (RAKE):**\n\nThe RAKE (Rapid Automatic Keyword Extraction) method identified the following keywords:\n\n* um went inside\n* look around um\n* old um sort\n* old building\n* orphanage um\n* live um\n* building um\n* like case\n* um\n* wall\n* used\n* started\n* pictures\n* happened\n* got\n* found\n* finding\n* enough\n\n**Keyword Extraction (YAKE):**\n\nThe YAKE (Yet Another Keyword Extractor) method identified the following keywords, ranked by significance:\n\n* happened what happened\n* happened\n* found\n* building\n* case\n* orphanage\n* live\n* inside\n* started\n* finding\n* pictures\n* wall\n* sort\n\n**Conclusion:**\n\nThe digital forensic analysis of the audio or video recording reveals a conversation that appears to be a narrative about a person's experience after leaving an orphanage. The sentiment analysis indicates a neutral tone with a moderate level of subjectivity. The speaker identification analysis identified three speakers, and the keyword extraction methods (RAKE and YAKE) highlighted key phrases and topics discussed in the conversation, including the orphanage, building, and finding objects.\n\nThe findings of this analysis can be used to inform further investigation or analysis in the context of digital forensics.\n\n**Recommendations:**\n\nBased on the findings of this analysis, it is recommended that further investigation be conducted to:\n\n* Identify the individuals involved in the conversation\n* Determine the context and purpose of the conversation\n* Analyze the significance of the keywords and topics discussed in the conversation\n\n**Limitations:**\n\nThis analysis is limited to the audio or video recording provided and may not be representative of the entire conversation or context. Further analysis and investigation are necessary to draw more comprehensive conclusions.",
+        "function_call": "null"
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}
+
+print(response['choices'][0]['message']['content'])
