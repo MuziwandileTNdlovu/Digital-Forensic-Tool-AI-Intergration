@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 # Project Structure
 The project has the following structure:
-
+```
 .
 ├── audiofiles/          # Folder for storing audio files to be analyzed
 ├── main.py              # Main script to run the application
@@ -45,7 +45,7 @@ The project has the following structure:
 ├── reports/             # Folder where generated PDF reports are saved
 └── secrets/             # Folder for storing secret keys or configuration
 
-
+```
 # Example
 Here's an example command to analyze an audio file named example.wav located in the audiofiles directory:
 ```
